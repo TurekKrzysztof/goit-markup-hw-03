@@ -1,0 +1,207 @@
+    :root {
+    --bodybg-color: #e5e5e5;
+    --link-hover: #2196f3;
+    --button-hover: #ffffff;
+    --buttonbg-color: #F5F4FA;
+    --text-color: #212121;
+    --link-color: #212121;
+}
+body {
+    font-family: 'Roboto', 'sans-serif';
+    font-style: normal;
+    color: var(--text-color);
+}
+.menu {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.links,
+.filters,
+.work-images,
+.team-photos,
+.projects,
+.lorem-list {
+    list-style: none;
+}
+.studio,
+.web {
+    font-family: 'Raleway', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.web {
+    color: #2196f3;
+}
+.studio {
+    color: #212121;
+}
+.link,
+.contact {
+    text-decoration: none;
+}
+.link {
+    color: var(--link-color);
+}
+.link:hover {
+    color: var(--link-hover);
+}
+.link:focus {
+    color: var(--link-hover);
+}
+.contact {
+    color: #757575;
+}
+.contact:hover {
+        color: var(--link-hover);
+    }
+.contact:focus {
+    color: var(--link-hover);
+}
+.tittle {
+    background-color: #2F303A;
+}
+.button1 {
+    font-family: 'Roboto', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    background-color: #2196f3;
+    cursor: pointer;
+}
+.click {
+    font-family: 'Roboto', 'sans-serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height */   
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--link-color);
+    background-color: var(--buttonbg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+}
+.click:hover {
+    color: var(--button-hover);
+    background-color: var(--link-hover);
+}
+.click:focus {
+    color: var(--button-hover);
+    background-color: var(--link-hover);
+}
+.headline {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+.lorem-ipsum { 
+    letter-spacing: 0.03em;
+}
+.lorem {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.lorem-text {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: #757575;
+}
+.lorem-text::first-letter,
+.headline2::first-letter,
+.project-name::first-letter,
+.project-type::first-letter {
+    text-transform: uppercase;
+}
+
+.headline2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.description {
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team {
+    background-color: #f5f4fa;
+}
+.name {
+    font-weight: 500;
+}
+.job {
+    font-weight: 400;
+    color: #757575;
+}
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height */
+
+    letter-spacing: 0.06em;
+}
+.project-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+.get-in-touch {
+    background-color: #2F303A;
+}
+.studio-footer {
+    font-family: 'Raleway', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+    color: #ffffff;
+}
+.location,
+.contact-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+}
+.contact-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
