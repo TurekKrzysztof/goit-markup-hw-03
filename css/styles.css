@@ -11,11 +11,34 @@ body {
     font-style: normal;
     color: var(--text-color);
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 .menu {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    /* making .menu a Flex container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;   
+    /* nie działa */
 }
 .links,
 .filters,
@@ -40,12 +63,17 @@ body {
 .studio {
     color: #212121;
 }
+.links {
+    display: flex;
+    flex-direction: row;
+}
 .link,
 .contact {
     text-decoration: none;
 }
 .link {
     color: var(--link-color);
+    margin-right: 46px;
 }
 .link:hover {
     color: var(--link-hover);
@@ -55,6 +83,9 @@ body {
 }
 .contact {
     color: #757575;
+    display: inline-block;
+    padding-left: 50px;
+    margin-right: 0;
 }
 .contact:hover {
         color: var(--link-hover);
@@ -64,6 +95,15 @@ body {
 }
 .tittle {
     background-color: #2F303A;
+}
+.tittle>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 200px;
+    padding-bottom: 280px;
 }
 .button1 {
     font-family: 'Roboto', 'sans-serif';
@@ -79,6 +119,12 @@ body {
     color: #FFFFFF;
     background-color: #2196f3;
     cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    width: 200px;
+    height: 50px;
 }
 .click {
     font-family: 'Roboto', 'sans-serif';
@@ -94,6 +140,7 @@ body {
     color: var(--link-color);
     background-color: var(--buttonbg-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 
     cursor: pointer;
 }
@@ -117,6 +164,16 @@ body {
 }
 .lorem-ipsum { 
     letter-spacing: 0.03em;
+}
+.lorem-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-top: 94px;
+    padding-left: 30px;
+    padding-bottom: 94px;
 }
 .lorem {
     font-size: 14px;
@@ -143,6 +200,15 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+    padding-bottom: 50px;
+}
+
+.work-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 94px;
 }
 .description {
     font-size: 16px;
@@ -182,6 +248,11 @@ body {
 }
 .get-in-touch {
     background-color: #2F303A;
+}
+footer > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .studio-footer {
     font-family: 'Raleway', 'sans-serif';
