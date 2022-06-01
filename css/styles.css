@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
     :root {
     --bodybg-color: #e5e5e5;
     --link-hover: #2196f3;
@@ -11,10 +16,12 @@ body {
     font-style: normal;
     color: var(--text-color);
 }
+
 .container {
     width: 1200px;
     margin: 0 auto;
 }
+
 .menu {
     font-weight: 500;
     font-size: 14px;
@@ -23,6 +30,7 @@ body {
 
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #EEEEEE;
 
     /* making .menu a Flex container */
     display: flex;
@@ -38,8 +46,8 @@ header > .container {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;   
-    /* nie działa */
 }
+
 .links,
 .filters,
 .work-images,
@@ -48,6 +56,7 @@ header > .container {
 .lorem-list {
     list-style: none;
 }
+
 .studio,
 .web {
     font-family: 'Raleway', 'sans-serif';
@@ -57,54 +66,71 @@ header > .container {
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+
 .web {
     color: #2196f3;
 }
+
 .studio {
     color: #212121;
 }
+
 .links {
     display: flex;
     flex-direction: row;
+
+    padding-left: 0px;
 }
 .link,
 .contact {
     text-decoration: none;
 }
+
 .link {
     color: var(--link-color);
+}
+
+li > .link {
     margin-right: 46px;
 }
+
 .link:hover {
     color: var(--link-hover);
 }
+
 .link:focus {
     color: var(--link-hover);
 }
+
 .contact {
     color: #757575;
     display: inline-block;
     padding-left: 50px;
     margin-right: 0;
 }
+
 .contact:hover {
         color: var(--link-hover);
-    }
+}
+
 .contact:focus {
     color: var(--link-hover);
 }
+
 .tittle {
     background-color: #2F303A;
 }
+
 .tittle>.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding-top: 200px;
-    padding-bottom: 280px;
+    padding-top: 106px;
+    padding-bottom: 186px;
 }
+
 .button1 {
     font-family: 'Roboto', 'sans-serif';
     font-style: normal;
@@ -126,6 +152,7 @@ header > .container {
     width: 200px;
     height: 50px;
 }
+
 .click {
     font-family: 'Roboto', 'sans-serif';
     font-style: normal;
@@ -144,14 +171,17 @@ header > .container {
 
     cursor: pointer;
 }
+
 .click:hover {
     color: var(--button-hover);
     background-color: var(--link-hover);
 }
+
 .click:focus {
     color: var(--button-hover);
     background-color: var(--link-hover);
 }
+
 .headline {
     font-weight: 900;
     font-size: 44px;
@@ -162,31 +192,34 @@ header > .container {
 
     color: #ffffff;
 }
+
 .lorem-ipsum { 
     letter-spacing: 0.03em;
 }
+
 .lorem-list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
-    padding-top: 94px;
     padding-left: 30px;
-    padding-bottom: 94px;
 }
+
 .lorem {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 }
+
 .lorem-text {
     font-size: 14px;
     line-height: 1.71;
 
     color: #757575;
 }
+
 .lorem-text::first-letter,
 .headline2::first-letter,
 .project-name::first-letter,
@@ -202,14 +235,15 @@ header > .container {
     letter-spacing: 0.03em;
 
     padding-bottom: 50px;
+    margin: 0;
 }
 
 .work-images {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 94px;
 }
+
 .description {
     font-size: 16px;
     line-height: 1.19;
@@ -217,17 +251,40 @@ header > .container {
 
     text-align: center;
     letter-spacing: 0.03em;
+    padding: 20px;
 }
+
 .team {
     background-color: #f5f4fa;
 }
+
+.team-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;;
+}
+
+.name1 {
+    width: 270px;
+    height: 368px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
 .name {
     font-weight: 500;
+
+    margin: 10px 0px;
 }
+
 .job {
     font-weight: 400;
     color: #757575;
+    margin: 10px 0px;
 }
+
 .project-name {
     font-weight: 700;
     font-size: 18px;
@@ -236,6 +293,7 @@ header > .container {
 
     letter-spacing: 0.06em;
 }
+
 .project-type {
     font-weight: 400;
     font-size: 16px;
@@ -246,14 +304,20 @@ header > .container {
 
     color: #757575;
 }
+
 .get-in-touch {
     background-color: #2F303A;
+    padding-top: 60px;
 }
+
 footer > .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
+
 .studio-footer {
     font-family: 'Raleway', 'sans-serif';
     font-style: normal;
@@ -264,6 +328,7 @@ footer > .container {
     
     color: #ffffff;
 }
+
 .location,
 .contact-footer {
     font-size: 14px;
@@ -272,6 +337,7 @@ footer > .container {
     color: #FFFFFF;
     font-style: normal;
 }
+
 .contact-footer {
     color: rgba(255, 255, 255, 0.6);
 }
