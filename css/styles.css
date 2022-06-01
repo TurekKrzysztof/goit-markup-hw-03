@@ -31,17 +31,15 @@ body {
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #EEEEEE;
-
-    /* making .menu a Flex container */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 header > .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .section {
     padding-top: 94px;
@@ -80,6 +78,7 @@ header > .container {
     flex-direction: row;
 
     padding-left: 0px;
+    padding-right: 275px;
 }
 .link,
 .contact {
@@ -128,7 +127,7 @@ li > .link {
     align-items: center;
 
     padding-top: 106px;
-    padding-bottom: 186px;
+    padding-bottom: 106px;
 }
 
 .button1 {
@@ -159,15 +158,17 @@ li > .link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    /* identical to box height */   
+    /* identical to box height */  
 
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--link-color);
     background-color: var(--buttonbg-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+
+    padding: 6px 22px;
 
     cursor: pointer;
 }
@@ -191,10 +192,23 @@ li > .link {
     text-transform: uppercase;
 
     color: #ffffff;
+
+    padding-bottom: 30px;
 }
 
-.lorem-ipsum { 
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.filters > li {
+    padding-right: 8px;
+}
+
+.lorem { 
     letter-spacing: 0.03em;
+    padding-bottom: 0px;
 }
 
 .lorem-list {
@@ -202,15 +216,20 @@ li > .link {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
-    padding-left: 30px;
 }
 
-.lorem {
+.lorem-list > li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lorem-ipsum {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+
+    padding-bottom: 10px;
 }
 
 .lorem-text {
@@ -218,6 +237,9 @@ li > .link {
     line-height: 1.71;
 
     color: #757575;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .lorem-text::first-letter,
@@ -227,6 +249,10 @@ li > .link {
     text-transform: uppercase;
 }
 
+.work > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .headline2 {
     font-weight: 700;
     font-size: 36px;
@@ -256,6 +282,11 @@ li > .link {
 
 .team {
     background-color: #f5f4fa;
+}
+
+.team > .container {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .team-photos {
@@ -308,6 +339,7 @@ li > .link {
 .get-in-touch {
     background-color: #2F303A;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 footer > .container {
@@ -315,7 +347,10 @@ footer > .container {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+}
 
+.logo-footer {
+    padding-bottom: 20px;
 }
 
 .studio-footer {
@@ -342,3 +377,12 @@ footer > .container {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.contact-footer > .contact {
+    padding-left: 0px;
+    padding-top: 9px;
+}
+
+.get-in-touch > .container > .contact {
+    padding-left: 0px;
+    padding-top: 9px;
+}
